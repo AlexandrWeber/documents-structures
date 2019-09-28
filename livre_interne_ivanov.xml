@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE livre [
+<!ELEMENT livre (ouvrage+)>
+<!ELEMENT ouvrage (nom, auteur, edition, parties)>
+<!ELEMENT edition (annee, orthographe?)>
+<!ATTLIST annee 
+		   premiere_edition CDATA #IMPLIED>
+<!ATTLIST orthographe 
+		    type CDATA #REQUIRED>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT auteur (#PCDATA)>
+<!ELEMENT parties (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT orthographe (#PCDATA)>]> 
+
+<!-- Mon livre préféré-->
+
+<livre>
+	<ouvrage> 
+		<nom> Discrous sur la méthode </nom>
+		<auteur> René Descartes </auteur>
+		<edition> Editions électroniques </edition>
+			<annee premiere_edition = "1637"> 2011 </annee>
+			<orthographe type = "réctifiée"> français moderne</orthographe>
+		<parties> Le livre se compose de 6 parties </parties>
+	</ouvrage>
+	<ouvrage>
+		<nom> Pour une logique du sens </nom>
+		<auteur> Robert Martin </auteur>
+		<edition> PUF </edition>
+			<annee> 1992 </annee>
+		<parties> Le livre se compose de 6 parties </parties>
+	</ouvrage>
+</livre>
