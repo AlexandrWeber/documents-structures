@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE livre SYSTEM "grammaire.dtd">
+
+<!-- Mon livre préféré-->
+
+<livre>
+	<ouvrage> 
+		<nom> Discrous sur la méthode </nom>
+		<auteur> René Descartes </auteur>
+		<edition> 
+			<annee premiere_edition = "1637"> 2011 </annee>
+			<orthographe type = "réctifiée"> français moderne</orthographe>
+		 </edition> 
+		<parties> Le livre se compose de 6 parties </parties>
+	</ouvrage>
+</livre>
