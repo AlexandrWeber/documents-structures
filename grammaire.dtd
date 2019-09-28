@@ -1,0 +1,15 @@
+<!ELEMENT livre (ouvrage+)>
+<!ELEMENT ouvrage (nom, auteur, edition, parties)>
+<!ELEMENT edition (annee, orthographe)>
+<!ATTLIST annee 
+		   premiere_edition CDATA #REQUIRED>
+<!ATTLIST orthographe 
+		    type CDATA #REQUIRED>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT auteur (#PCDATA)>
+<!ELEMENT parties (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT orthographe (#PCDATA)>
+
+
+
